@@ -1,0 +1,10 @@
+package annotation.실습;
+
+public class 검증 {
+	public static void main(String[] args) {
+
+		MyEx o = new MyEx(3);
+		
+		
+	}
+}

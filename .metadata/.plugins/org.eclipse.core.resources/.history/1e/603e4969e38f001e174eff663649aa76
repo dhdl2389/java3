@@ -1,0 +1,19 @@
+package annotation.실습;
+
+public class 검증 {
+	public static void main(String[] args) {
+
+		MyEx o = new MyEx(3);
+		
+		
+	}
+	
+	
+	public static void 검증하기(Object obj) {
+		
+		Class clazz = obj.getClass();
+		
+		clazz.getDeclaredFields();
+		
+	}
+}

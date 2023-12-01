@@ -1,0 +1,6 @@
+package annotation.실습;
+
+@Retention(RetentionPolicy.Runtime)
+public @interface Count {
+
+}
