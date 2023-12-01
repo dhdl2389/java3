@@ -3,12 +3,21 @@ import java.util.*;
 
 class HashMapEx_EntrySet {
 	public static void main(String[] args) {
+		
+		// => Object (모든 클래스는 Object 상속함 )
+		// int, char, double => 객체로 Wrapper 클래스 Integer, Character, Double
+		// 키, 값
+		// int a;
+		
+		int a = 100;  // int <-> Integer  auto boxing
+		
 		HashMap<String, Integer> map = new HashMap<>();
 		map.put("김자바",  90);
 		map.put("김자바", 100);
 		map.put("이자바", 100);
 		map.put("강자바", 80);
 		map.put("안자바", 90);
+		map.put("김재열", a);
 		
 		
 		/*class HashMap {		

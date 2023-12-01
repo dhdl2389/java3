@@ -1,0 +1,21 @@
+package 재귀호출.실습;
+
+public class Ex01 {
+	public static void main(String[] args) {
+
+		// 매서드 (함수), 입력, 반환값
+		// 1 ~ 10 합 구하기
+
+	}
+
+	public static int getSum(int n) {
+
+		int sum = 0;
+		for (int i = 0; i <= n; i++) {
+			sum = sum + i;
+		}
+		return sum;
+
+	}
+
+}

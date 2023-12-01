@@ -1,0 +1,21 @@
+package ch11.hashmap;
+
+import java.util.*;
+
+public class HashMapEx {
+
+	public static void main(String[] args) {
+
+		HashMap<String, Integer> map = new HashMap<>();
+
+		map.put("김자바", 90);
+		map.put("김자바", 100);
+		map.put("이자바", 100);
+		map.put("강자바", 80);
+		map.put("안자바", 90);
+
+		Set set = map.entrySet();
+		Iterator it = set.iterator();
+
+	}
+}

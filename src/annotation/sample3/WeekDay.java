@@ -11,10 +11,10 @@ public enum WeekDay {
 		// TODO Auto-generated constructor stub
 		this.name = name;
 	}
-	
+
 	String getName() {
 		return name;
-		
+
 	}
 
 }

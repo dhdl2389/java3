@@ -1,0 +1,40 @@
+package ch11.hashset;
+
+import java.util.HashSet;
+import java.util.Objects;
+
+public class Customer {
+
+	String id;
+	String name;
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	public Customer(String id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + "]";
+	}
+	
+	
+
+	public static void main(String[] args) {
+
+		Customer c = new Customer("jy", "김재열");
+		Customer c2 = new Customer("jy", "김재열");
+
+		HashSet set = new HashSet();
+
+		set.add(c);
+		set.add(c2);
+		System.out.println(set);
+	}
+}

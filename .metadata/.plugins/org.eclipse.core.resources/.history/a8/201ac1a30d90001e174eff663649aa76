@@ -1,0 +1,46 @@
+package ch11.hashset;
+
+import java.util.Objects;
+
+public class Customer {
+
+	String id;
+	String name;
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	
+
+	public Customer(String id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) // 내자신과 비교
+			return true;
+		if (obj == null) // 당연히 거짓
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		User other = (User) obj;
+		return Objects.equals(id, other.id);
+	}
+
+	public static void main(String[] args) {
+		User user = new User("victoai", "1234");
+		User user2 = new User("victoai", "1234");
+		// 해시코드 => 객체의 고유한 정수 표현
+
+		System.out.println(user.hashCode());
+		System.out.println(user2.hashCode());
+
+	}
+}

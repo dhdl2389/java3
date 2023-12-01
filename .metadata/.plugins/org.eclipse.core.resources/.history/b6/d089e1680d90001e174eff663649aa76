@@ -1,0 +1,8 @@
+package ch11.hashset;
+
+public class Customer {
+
+	
+	String id;
+	String name;
+}

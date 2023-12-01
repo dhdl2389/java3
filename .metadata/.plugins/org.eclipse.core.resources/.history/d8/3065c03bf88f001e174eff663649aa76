@@ -1,0 +1,42 @@
+package interfaceEx;
+
+interface SomethingDoI {
+
+	public void doI();
+}
+
+public class Ex01 {
+
+	public void forStart() {
+		for (int i = 1; i <= 5; i++) {
+			System.out.println("★");
+		}
+	}
+
+	public void forCharacter(char something) {
+		for (int i = 1; i <= 5; i++) {
+			System.out.println(something);
+		}
+	}
+
+	public void forSomethingDo(SomethingDoI somethingDo) {
+		for (int i = 1; i <= 5; i++) {
+			somethingDo.doI();
+		}
+	}
+
+	public static void main(String[] args) {
+		
+		
+		Class a implements SomethingDoI {
+			
+			
+			public void doI() {
+				System.out.println("??");
+				
+			}
+		}
+	  
+
+	}
+}

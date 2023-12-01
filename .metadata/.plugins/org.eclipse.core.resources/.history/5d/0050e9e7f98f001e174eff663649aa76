@@ -1,0 +1,10 @@
+package interfaceEx;
+
+public class LibAex {
+	Ex01 libA = new Ex01();
+
+	libA.forStart();
+
+	libA.forCharacter('?');
+
+}
